@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/osm_android_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_load_mapbox"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="加载Mapbox瓦片"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_load_td"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_load_mapbox"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="加载天地图瓦片"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_load_amap"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_load_td"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="加载高德瓦片"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_load_google"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_load_amap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="加载谷歌瓦片"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_load_arcgis"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_load_google"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="加载ArcGis瓦片"
+        android:textSize="15sp" />
+
+</RelativeLayout>
